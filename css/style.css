@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+* {
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #18181B;
+}
+#conteudo::-webkit-scrollbar{
+    width: 7px;
+}
+#conteudo::-webkit-scrollbar-track {
+    background: transparent;
+}
+#conteudo::-webkit-scrollbar-thumb {
+    background-color: #B9B9BA;
+    border-radius: 50rem;
+    width: 5px;
+}
+header {
+    text-align: center;
+}
+header span{
+    color: #F82629;
+    font-size: 2rem;
+}
+.content-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+span {
+    font-size: 15px;
+}
+#msg {
+    padding: 10px;
+    border-radius: 0.4rem;
+    background: #464649;
+    color: #B9B9BA;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    margin: 1rem 0;
+
+}
+#msg:hover{
+    border: 2px solid #5E5E60;
+}
+#msg:focus{
+    background: #000000;
+    border: 2px solid #F82629;
+    color: #6E6E6E;
+}
+.msg-box a{
+    padding: 0.5rem;
+    background: #F82629;
+    text-decoration: none;
+    border-radius: 0.4rem;
+}
+.msg-box a:hover{
+    background: #c21e21;
+}
+.msg-box a i{
+    background: transparent;
+}
+#conteudo {
+    padding: 10px;
+    max-height: 70vh;
+    max-width: 100vh;
+    overflow-y: scroll;
+    width: 80vw;
+}
+.self {
+    display: flex;
+    margin: 7px 10px;
+    border-radius: 5px;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex: 1;   
+}
+.me {
+    background-color: #313131;
+    text-align: right;
+    padding: 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.me b {
+    color: #F82629;
+}
+/* .another b {
+    color: ;
+} */
+.conteudo {
+    display: flex;
+    margin: 7px 10px;
+    text-align: left;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    align-content: flex-start;
+    flex: 1;   
+}
+.another {
+    background-color: #313131;
+    padding: 0.7rem;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.horario-msg {
+    font-weight: 200;
+    font-size: 13px;
+    margin: 4px 0;
+}
+.horario-msg i {
+    color: #B9B9BA;
+}
