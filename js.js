@@ -1,9 +1,9 @@
-// var input = document.getElementById("msg");
-// input.addEventListener("keypress", function (event) {
-//     if (event.key === "Enter") {
-//         enviarMSG();
-//     }
-// });
+var input = document.getElementById("msg");
+input.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        enviarMSG();
+    }
+});
 
 var button = document.getElementById("send-btn");
 button.addEventListener("click", function () {
@@ -51,9 +51,6 @@ onValue(dbRef, (snapshot) => {
         } else {
             meuhtml += '<div class="msg"><div class="conteudo"><div class="another"><b>' + childSnapshot.val().nome + '<div class="horario-msg"><i>' + childSnapshot.val().horario + '</i></div></b><span>' + childSnapshot.val().mensagem + '</span></div></div></div>'
         }
-
-        // meuhtml += '<div class="msg"><b>' + childSnapshot.val().nome + '<i> - ' + childSnapshot.val().horario + '</i></b><span>' + childSnapshot.val().mensagem + '</span></div>';
-
     });
     atualizarHTML();
 });

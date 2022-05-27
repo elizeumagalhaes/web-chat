@@ -6,6 +6,63 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #18181B;
+    margin: 0; padding: 0;
+}
+.page {
+    display: flex;
+    justify-content: center;
+}
+.box {
+    width: 250px;
+    height: 83vh;
+    background-color: #313131;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 1.5rem;
+    margin: 0 3rem;
+    overflow-y:scroll;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.box::-webkit-scrollbar{
+    width: 5px;
+}
+.box::-webkit-scrollbar-track {
+    background: transparent;
+}
+.box::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 50rem;
+    width: 5px;
+}
+.box h2 {
+    text-align: center;
+}
+.rate-users {
+    background-color: #18181B;
+    border-radius: 10px;
+    height: 366px;
+    margin: 1rem 0;
+    padding: .7rem;
+}
+.rate-users h4 {
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 600;
+}
+.rate-users a {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.rate-users img {
+    width: 40px;
+    margin: 10px 10px;
+}
+.rate-users a:hover{
+    color: #F82629;
+    transition: 0.2s;
 }
 #conteudo::-webkit-scrollbar{
     width: 7px;
@@ -29,6 +86,7 @@ header span{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 span {
     font-size: 15px;
@@ -42,6 +100,7 @@ span {
     border: none;
     font-weight: 700;
     margin: 1rem 0;
+    width: calc(100% - 117px);
 
 }
 #msg:hover{
@@ -51,6 +110,9 @@ span {
     background: #000000;
     border: 2px solid #F82629;
     color: #6E6E6E;
+}
+.msg-box {
+    width: -webkit-fill-available;
 }
 .msg-box a{
     padding: 0.5rem;
@@ -66,7 +128,7 @@ span {
 }
 #conteudo {
     padding: 10px;
-    max-height: 70vh;
+    max-height: 80vh;
     max-width: 100vh;
     overflow-y: scroll;
     width: 80vw;
@@ -117,4 +179,9 @@ span {
 }
 .horario-msg i {
     color: #B9B9BA;
+}
+@media screen and (max-width: 1600px) {
+    .box {
+        display: none;
+    }
 }
